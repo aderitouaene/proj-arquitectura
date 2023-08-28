@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+header img{
+    width: 20%;
+}
+
+
+
+h1{  /*Box-Level*/
+
+    /* por padrao, o h1 ee um bloco, mas se colocarmos: "display: inline;" ele vai ficar um inline, logo nao vai dar mais pra fazer altura e largura*/
+
+   background-color: lightgray;
+   height: 300px;
+   width: 300px;
+
+   /*
+   border-width: 10px;
+   border-style: solid;
+   border-color: darkslategray;
+   */
+
+   border: 10px solid darkslategray;    /*este ee um SHORTHAND, serva pra simplicar e reduzir as linhas, neste caso ja nao preciso colocar as linhas de cima "border(width, solid, darkslategray)" pois simplifiquei numa univa linha */
+
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+
+   padding: 10px 10px 10px 10px; /*aqui tambem usei um SHORTHAND, mas neste caso, os 4 valores sao iguais, entao se informar uma unica vez, vai servir para todos os lados, assim seria apenas: "padding: 10px;" posso tambem colocar apenas 2 valores assim:  "padding: 10px 20px;", neste caso, por cima e por baixo seria 10px e nos lados seria 20px */
+
+   margin-top: 10px;
+   margin-right: 20px;
+   margin-bottom: 40px;
+   margin-left: 10px;
+
+   margin: auto;   /* para deixar a caixa no meio, se ativo isso, os outros "maigin" acima ficam nulos, nas no caso de querer centralizar nas laterais e determinar um valir de cima e de baixo seria: "margin:10px auto 10px auto " */
+
+   outline-width: 5px;
+   outline-style: dashed;
+   outline-color: salmon;
+}
+a{   /* Inline-Level*/
+
+   /* por padrao, o link ee um Inline-Level, mas se colocarmos: "display: block;" ele vai ficar um bloco, logo vai ocupar uma linha sozinho*/
+
+   border-width: 5px;
+   border-style: solid;
+   border-color: red;
+
+   padding-top: 0px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+
+
+}
